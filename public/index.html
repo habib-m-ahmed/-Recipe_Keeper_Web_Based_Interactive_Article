@@ -103,7 +103,7 @@
   <div id="contents" class="base-grid" style="border-top: 1px solid #eee; padding: 1.5rem 0;">
     <nav class="l-text toc figcaption">
       <h3>Contents</h3>
-      <div><a href="#overview">Executive summary</a></div>
+      <div><a href="#executive_summary">Executive summary</a></div>
       <div><a href="#navigational_map">Navigational map</a></div>
       <div><a href="#design_principles">Design principles</a></div>
       <!--To add indented bullet points as sub-topics:
@@ -113,7 +113,7 @@
       </ul>
       -->
       <div><a href="#final_heuristic_evaluation">Final heuristic evaluation</a></div>
-      <div><a href="#discussion">Recommendations to improve the system</a></div>
+      <div><a href="#discussion">Discussion: recommendations to improve the system</a></div>
     </nav>
   </div>
 
@@ -121,92 +121,36 @@
   <d-article>
 
     <p>
-      While deep neural networks have overwhelmingly established state-of-the-art
-      results in many artificial intelligence problems, they can still be
-      difficult to develop and debug.
-      Recent research on deep learning understanding has focused on
-      feature visualization <d-cite key="erhan2009visualizing,zeiler2014visualizing"></d-cite>,
-      theoretical guarantees <d-cite key="haeffele2017global,chizat2018onthe"></d-cite>,
-      model interpretability <d-cite key="zhou2015object,zhou2018interpreting"></d-cite>,
-      and generalization <d-cite key="neyshabur2014insearch,zhang2017understanding"></d-cite>.
-    </p>
+      As highlighted in our initial proposal, the app’s tagline is to “Cook more. Eat Healthier. Shop Smarter.” Our design approach focuses on considering key parts of the user experience and implementing / improving features that help it better achieve that promise.
 
-    <p>
-      In this work, we analyze deep neural networks from a complementary
-      perspective, focusing on convolutional models.
-      We are interested in understanding the extent to
-      which input signals may affect output features, and mapping
-      features at any part of the network to the region in the input that
-      produces them. The key parameter to associate an output feature to an input
-      region is the <i>receptive field</i> of the convolutional network, which is
-      defined as the size of the region in the input that produces the feature.
-    </p>
-    <p>
-      As our first contribution, we
-      present a mathematical derivation and an efficient algorithm to compute
-      receptive fields of modern convolutional neural networks.
-      Previous work <d-cite key="hien2017aguide,le2017what"></d-cite>
-      discussed receptive field
-      computation for simple convolutional
-      networks where there is a single path from the input to the output,
-      providing recurrence equations that apply to this case.
-      In this work, we revisit these derivations to obtain a closed-form
-      expression for receptive field computation in the single-path case.
-      Furthermore, we extend receptive field computation to modern convolutional
-      networks where there may be multiple paths from the input to the output.
-      To the best of our knowledge, this is the first exposition of receptive
-      field computation for such recent convolutional architectures.
-    </p>
-    <p>
-      Today, receptive field computations are needed in a variety of applications. For example,
-      for the computer vision task of object detection, it is important
-      to represent objects at multiple scales in order to recognize small and large instances;
-      understanding a convolutional feature's span is often required for that goal
-      (e.g., if the receptive field of the network is small, it may not be able to recognize large objects).
-      However, these computations are often done by hand, which is both tedious and error-prone.
-      This is because there are no libraries to compute these parameters automatically.
-      As our second contribution, we fill the void by introducing an
-      <a href="https://github.com/google-research/receptive_field">open-source library</a>
-      which handily performs the computations described here. The library is integrated into the Tensorflow codebase and
-      can be easily employed to analyze a variety of models,
-      as presented in this article.
-    </p>
-    <!-- In order to enable the community to better understand the receptive fields of their models,
-       we introduce a library -->
-    <p>
-      We expect these derivations and open-source code to improve the understanding of complex deep learning models,
-      leading to more productive machine learning research.
     </p>
 
     <h2 id="executive_summary">Executive Summary</h2>
 
     <p>
-      We consider fully-convolutional neural networks, and derive their receptive
-      field size and receptive field locations for output features with respect to the
-      input signal.
-      While the derivations presented here are general enough for any type of signal used at the input of convolutional
-      neural networks, we use images as a running example, referring to modern computer vision architectures when
-      appropriate.
-    </p>
-    <p>
-      First, we derive closed-form expressions when the network has a
-      single path from input to output (as in
-      AlexNet <d-cite key="krizhevsky2012imagenet"></d-cite>
-      or
-      VGG <d-cite key="simonyan2015very"></d-cite>). Then, we discuss the
-      more general case of arbitrary computation graphs with multiple paths from the
-      input to the output (as in
-      ResNet <d-cite key="he2016deep"></d-cite>
-      or
-      Inception <d-cite key="szegedy2016inception"></d-cite>). We consider
-      potential alignment issues that arise in this context, and explain
-      an algorithm to compute the receptive field size and locations.
+      PLACEHOLDER (waiting on Aly for new executive summary)
     </p>
 
     <p>
-      Finally, we analyze the receptive fields of modern convolutional neural networks, showcasing results obtained
-      using our open-source library.
+      Our redesigned Recipe Keeper app has been created to store and process the same information as the original app, but in a manner that ensures an ideal user experience through more suitable cognitive effects. To achieve this, our design process focused heavily on how to represent the information and build interactions that aligned with the users' needs. Our design approach was based on the representation design framework that considered user tasks, underlying information, cognitive abilities, and context of use.
     </p>
+
+    <p>
+      To address user tasks such as comparison, adding to planner, and viewing recipes, our redesign focuses on intuitive interactions that are easy to use and help users to achieve their goals efficiently. For example, our recipe comparison feature uses a side-by-side layout that enables users to compare two recipes quickly. Additionally, our meal planner feature allows users to add recipes into their calendar, making it easier to plan and organize meals.
+    </p>
+
+    <p>
+      When considering the underlying information such as quantitative, qualitative, and text data, our redesign was focused on presenting the data in an easy-to-understand manner. For example, within the comparison feature, when a user is comparing the nutritional information of two different recipes, as the information is quantitative, the representation is able to highlight the “better” recipe based on the statistic. 
+    </p>
+
+    <p>
+      Our redesign also takes into account the cognitive abilities and limitations of users while using the app. For instance, while cooking, users may not be able to read instructions or interact with the app using their hands. To address this, we have included “Sous Chef”, a voice and audio feature that allows users to access recipes using voice commands.
+    </p>
+
+    <p>
+      Finally, our redesign considers the context of use, which includes being organized with recipes, wanting to cook more, and being informed. Accordingly, we have included a search feature that makes it easy for users to find recipes based on their dietary requirements or preferences. This was also the inspiration for a meal recommender feature, where showing the user the picture of a delicious recipe that they could make would encourage them to not only cook but also use other aspects of the app.
+    </p>
+
 
     <h2 id="navigational_map">Navigational Map</h2>
 
@@ -767,7 +711,7 @@
       can find a discussion on these <a href="#other-network-operations" id="return-from-other-network-operations">in the appendix</a>.
     </p>
 
-    <h2 id="arbitrary-computation-graphs">Arbitrary computation graphs</h2>
+    <h2 id="final_heuristic_evaluation">Final Heuristic Evaluation</h2>
 
     <p>
       Most state-of-the-art convolutional neural networks today (e.g.,
