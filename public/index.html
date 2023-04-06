@@ -70,7 +70,11 @@
 </head>
 
 <body>
+  <!--
+  
   <d-front-matter>
+   
+
     <script id="distill-front-matter" type="text/json">{
       "title": "Recipe Keeper - Group 6 Final Report",
       "description": "Our application is a redesign of the Recipe Keeper app, which is an all-in-one recipe organizer, shopping list, and meal planner available across devices (desktop, mobile and tablet). The app allows users to store all their recipes in one place, so that they can better plan their meals and grocery needs.",
@@ -81,28 +85,35 @@
         {"author": "Eric Wang"},
         {"author": "Habib Ahmed"}
       ]
-    }</script>
+    }</script> 
+
   </d-front-matter>
+
+  -->
 
   <d-title>
     <h1>Recipe Keeper - Group 6 Final Report</h1>
     <p style="grid-column: text;">Our application is a redesign of the Recipe Keeper app, which is an all-in-one recipe organizer, shopping list, and meal planner available across devices (desktop, mobile and tablet). The app allows users to store all their recipes in one place, so that they can better plan their meals and grocery needs.</p>
   </d-title>
 
-  <d-byline></d-byline>
+  <!-- TO ENTER HORIZONTAL LINE THAT SPLITS SECTIONS: 
+      <d-byline></d-byline>
+  -->
 
   <div id="contents" class="base-grid" style="border-top: 1px solid #eee; padding: 1.5rem 0;">
     <nav class="l-text toc figcaption">
       <h3>Contents</h3>
-      <div><a href="#overview">Overview of the article</a></div>
-      <div><a href="#problem-setup">Problem setup</a></div>
-      <div><a href="#single-path-networks">Single-path networks</a></div>
+      <div><a href="#overview">Executive summary</a></div>
+      <div><a href="#navigational_map">Navigational map</a></div>
+      <div><a href="#design_principles">Design principles</a></div>
+      <!--To add indented bullet points as sub-topics:
       <ul>
         <li><a href="#computing-receptive-field-size">Computing receptive field size</a></li>
         <li><a href="#computing-receptive-field-region">Computing receptive field region in input image</a></li>
       </ul>
-      <div><a href="#arbitrary-computation-graphs">Arbitrary computation graphs</a></div>
-      <div><a href="#discussion">Discussion: receptive fields of modern networks</a></div>
+      -->
+      <div><a href="#final_heuristic_evaluation">Final heuristic evaluation</a></div>
+      <div><a href="#discussion">Recommendations to improve the system</a></div>
     </nav>
   </div>
 
@@ -167,7 +178,7 @@
       leading to more productive machine learning research.
     </p>
 
-    <h2 id="overview">Overview of the article</h2>
+    <h2 id="executive_summary">Executive Summary</h2>
 
     <p>
       We consider fully-convolutional neural networks, and derive their receptive
@@ -197,7 +208,7 @@
       using our open-source library.
     </p>
 
-    <h2 id="problem-setup">Problem setup</h2>
+    <h2 id="navigational_map">Navigational Map</h2>
 
     <p>
       Consider a fully-convolutional network (FCN) with \(L\) layers, \(l = 1,2,\ldots
@@ -333,7 +344,7 @@
 
     </figure>
 
-    <h2 id="single-path-networks">Single-path networks</h2>
+    <h2 id="design_principles">20 Design Principles</h2>
 
     <p>
       In this section, we compute recurrence and closed-form expressions for
@@ -956,7 +967,7 @@
       \eqref{eq:align_crit_1} and \eqref{eq:align_crit_2}.
     </p>
 
-    <h2 id="discussion">Discussion: receptive fields of modern networks</h2>
+    <h2 id="discussion">Discussion: Recommendations to Improve the System</h2>
 
     <p>
       In this section, we present the receptive field parameters of modern
