@@ -103,18 +103,18 @@
 
   <div id="contents" class="base-grid" style="border-top: 1px solid #eee; padding: 1.5rem 0;">
     <nav class="l-text toc figcaption">
-      <h3>Contents</h3>
-      <div><a href="#executive_summary">Executive summary</a></div>
-      <div><a href="#navigational_map">Navigational map</a></div>
-      <div><a href="#design_principles">Design principles</a></div>
+      <h3>Contents &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAuthors</h3>
+      <div><a href="#executive_summary">Executive summary&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAnjana Somasundaram</a></div>
+      <div><a href="#navigational_map">Navigational map&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSajin Kowser</a></div>
+      <div><a href="#design_principles">Design principles&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEric Wang</a></div>
       <!--To add indented bullet points as sub-topics:
       <ul>
         <li><a href="#computing-receptive-field-size">Computing receptive field size</a></li>
         <li><a href="#computing-receptive-field-region">Computing receptive field region in input image</a></li>
       </ul>
       -->
-      <div><a href="#final_heuristic_evaluation">Final heuristic evaluation</a></div>
-      <div><a href="#discussion">Discussion: recommendations to improve the system</a></div>
+      <div><a href="#final_heuristic_evaluation">Final heuristic evaluation &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAly Dayani</a></div>
+      <div><a href="#discussion">Discussion: recommendations to improve the system &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHabib Ahmed</a></div>
     </nav>
   </div>
 
@@ -142,32 +142,41 @@
 
     <h2 id="executive_summary">Executive Summary</h2>
 
-    <p>
-    <b>
-      PLACEHOLDER (waiting on Aly for new executive summary)
-    </b>
-    </p>
+    <h3>Tool Selection</h3>
 
-    <p>
-      Our redesigned Recipe Keeper app has been created to store and process the same information as the original app, but in a manner that ensures an ideal user experience through more suitable cognitive effects. To achieve this, our design process focused heavily on how to represent the information and build interactions that aligned with the users' needs. Our design approach was based on the representation design framework that considered user tasks, underlying information, cognitive abilities, and context of use.
-    </p>
+Recipe Keeper is an all-in-one recipe organizer, shopping list, and meal planner available across devices. The app allows users to store all their recipes in one place, so that they can better plan their meals and grocery needs. Our redesign aimed to optimize the current design for the target users, adults aged 20-40 who have busy schedules and are looking to minimize their time spent on tedious cooking-related tasks.
 
-    <p>
-      To address user tasks such as comparison, adding to planner, and viewing recipes, our redesign focuses on intuitive interactions that are easy to use and help users to achieve their goals efficiently. For example, our recipe comparison feature uses a side-by-side layout that enables users to compare two recipes quickly. Additionally, our meal planner feature allows users to add recipes into their calendar, making it easier to plan and organize meals.
-    </p>
+<h3>Improved and Implemented Feature Overview</h3>
 
-    <p>
-      When considering the underlying information such as quantitative, qualitative, and text data, our redesign was focused on presenting the data in an easy-to-understand manner. For example, within the comparison feature, when a user is comparing the nutritional information of two different recipes, as the information is quantitative, the representation is able to highlight the “better” recipe based on the statistic. 
-    </p>
+Through our knowledge of design principles, we implemented new features and states to improve the overall experience of the user. Some of the core experiences that we improved include Adding recipes, interacting with them, comparing them, representing all the data in useful ways, and weekly planning. The implementation of these features helps to better satisfy users and make the app more flexible and efficient to use. In particular, we organized the redesign into the following states:
 
-    <p>
-      Our redesign also takes into account the cognitive abilities and limitations of users while using the app. For instance, while cooking, users may not be able to read instructions or interact with the app using their hands. To address this, we have included “Sous Chef”, a voice and audio feature that allows users to access recipes using voice commands.
-    </p>
+<p></p>
 
-    <p>
-      Finally, our redesign considers the context of use, which includes being organized with recipes, wanting to cook more, and being informed. Accordingly, we have included a search feature that makes it easy for users to find recipes based on their dietary requirements or preferences. This was also the inspiration for a meal recommender feature, where showing the user the picture of a delicious recipe that they could make would encourage them to not only cook but also use other aspects of the app.
-    </p>
+<ul>
+  <li>Sous-Chef (Voice Assistant)</li>
+  <li>Planner</li>
+  <li>Search</li>
+  <li>Comparison</li>
+  <li>Meal Recommender</li>
+  <li>Bulk Add</li>
+  <li>Ingredient Scanner</li>
+</ul>
 
+<p>
+</p>
+
+When considering the underlying information such as quantitative, qualitative, and text data, our redesign was focused on presenting the data in an easy-to-understand manner. For example, within the comparison feature, when a user is comparing the nutritional information of two different recipes, as the information is quantitative, the representation is able to highlight the “better” recipe based on the statistic. 
+
+<p>
+</p>
+  Our redesign also takes into account the cognitive abilities and limitations of users while using the app. For instance, while cooking, users may not be able to read instructions or interact with the app using their hands. To address this, we have included “Sous Chef”, a voice and audio feature that allows users to access recipes using voice commands.
+
+
+<p>
+</p>
+Our heuristic evaluation and overview of design principles showed significant improvements in the match with the real world by understanding the user's actual needs and context in which they use the app. While there is still room for certain improvements as discussed, the redesign provides a strong foundation for an app that truly allows users to “Cook more. Eat Healthier. Shop Smarter”.
+
+    
 
     <h2 id="navigational_map">Navigational Map</h2>
 
@@ -321,9 +330,11 @@
 
     Users can press the “Sous Chef Mode” option on the left navigation bar to access the voice assistant. They are then able to walk through a sample recipe from start to finish. Note, for the purposes of the Figma, the voice commands are not operational and are purely illustrative.
 
-  <h3>Figma Storboard:</h3>
+  <h3>Figma Storyboard:</h3>
 
     <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FnHXPKbDTRXIHypoJJGfS3C%2FStoryboard%3Fnode-id%3D400%253A31762%26t%3DDRTJ4lVb4dSkPUuz-1" allowfullscreen></iframe>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FnHXPKbDTRXIHypoJJGfS3C%2FStoryboard%3Fnode-id%3D134-30024%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D121%253A29814%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+
 
     <h2 id="design_principles">Design Principles</h2>
 
@@ -346,7 +357,7 @@
 
     The Visibility design principle highlights the importance of making key information and actions visible to the user. By doing so, users can easily understand what actions are available and what the consequences of those actions will be.
     <p></p>
-    In the context of our app, the Visibility design principle is applied by providing clear and concise copyright to the user when interacting with the voice assistant (i.e, “ask me a question). By doing this, users are made aware of the possible actions that can be performed, and what the consequences of those actions will be. This enables users to have a better understanding of how to interact with the voice assistant and ensures that they are able to use it effectively. Moreover, the app leverages the Visibility principle by highlighting important nutrition information among two recipes in different colors, making it both visible and accessible to the user. This helps users quickly identify the key metrics that differentiate two recipes, enabling them to make informed decisions about which recipe to select. 
+    In the context of our app, the Visibility design principle is applied by providing clear and concise copyright to the user when interacting with the voice assistant (i.e, “ask me a question"). By doing this, users are made aware of the possible actions that can be performed, and what the consequences of those actions will be. This enables users to have a better understanding of how to interact with the voice assistant and ensures that they are able to use it effectively. Moreover, the app leverages the Visibility principle by highlighting important nutrition information among two recipes in different colors, making it both visible and accessible to the user. This helps users quickly identify the key metrics that differentiate two recipes, enabling them to make informed decisions about which recipe to select. 
     
 
     <h3>4) Feedback</h3>
@@ -480,26 +491,93 @@ The Mapping and Control design principle is applied through the comparison tool 
     <img src="heuristic_eval1.png" alt="Evaluation #1">
 
     <p></p>
-    <p>
-      We rank high on the first four by by featuring things like sous chef vocalizing the steps to show visibility of system status, metaphors to match with the real world, back, undo and cancel buttons to provide user freedom and a consistent navbar with similar and recognizable icons for consistency and standards.
-    </p>
+    
+    
 
-    <img src="heuristic_eval1.png" alt="Evaluation #2">
+    <h3>
+      Visibility of System Status
+    </h3>
+
+    Our app redesign excels in providing users with clear and concise feedback regarding their actions and the system's status, ensuring a seamless and intuitive user experience. The Sous-Chef mode, which vocalizes recipe steps, allows users to follow along without needing to interact with the app manually. This mode ensures users are aware of their progress within a recipe, making the cooking process more enjoyable and efficient.
+    <p></p>
+The circular progress bar appears when the app processes requests such as autocomplete in the meal planner. This visual feedback helps users understand that their input is being processed and allows them to anticipate task completion.
+<p></p>
+The app also delivers clear confirmation feedback upon the successful completion of actions, such as adding a recipe, bolstering user confidence in the system. Additionally, warning messages are displayed when users encounter issues or errors, guiding them towards resolving problems and maintaining a smooth user experience.
+<p></p>
+The app highlights essential information for each recipe, including dietary restrictions, to keep users informed about crucial aspects of their meal choices. This feature streamlines the decision-making process by enabling users to quickly identify recipes that meet their specific requirements.
+
+<h3>
+  Match with Real World
+</h3>
+We employ user-friendly language, intuitive organization, and recognizable visual cues. By using familiar terms like "grocery list" and "meal plan" instead of technical jargon, the app ensures users can quickly comprehend and navigate its various features.
+<p></p>
+The organization of recipes and ingredients aligns with users' real-world experiences, as ingredients are thoughtfully grouped by category, and recipes are displayed by cuisine type. This approach enables users to efficiently find what they need, whether they're shopping or exploring new culinary options.
+<p></p>
+Additionally, the app leverages easily recognizable visual cues and metaphors that match users' mental models. Examples include using a shopping cart icon for the grocery list feature and a calendar icon for the meal planner. These visual elements contribute to an intuitive user experience, allowing users to understand the functions of each feature and navigate the app with ease.
+
+
+<h3>
+  User Control & Freedom
+</h3>
+
+Our prototype implements the heuristic of User Control & Freedom by providing an "Undo" or "Cancel" button that allows users to easily reverse their actions, such as deleting a recipe or adding an ingredient to their shopping list by mistake. Another example is if the autofill feature adds too much information or fills in the meal planner for a day that the user doesn't want to fill in, they can easily navigate to the undo button and revert. If the user wants to edit the automatically filled information partially, they can do so easily by adjusting the parameters of the meal plan. The ability to press the 'back', 'undo', and 'cancel' buttons to reverse actions gives the user control and freedom. They are not forced to delete everything and start from scratch. 
+
+<h3>
+  Consistency and Standards
+</h3>
+
+Incorporating the heuristic of consistency and standards, our prototype features a navigation bar on the side of the interface with similar and recognizable icons, providing a consistent and familiar experience for users. The icons and their placement are easily recognizable, allowing users to quickly find and access the features they need. Moreover, the prototype uses industry standard symbols and language for common actions, such as using a trash can icon to indicate delete or a square house to indicate the home page. This consistency in design and language not only helps users to understand and navigate the system but also makes it easier for them to transfer their knowledge from similar systems to Recipe Keeper. 
+
+<p></p>
+<p></p>
+<img src="heuristic_eval2.png" alt="Evaluation #2">
+<p></p>
+<p></p>
+<h3>
+  Error Prevention
+</h3>
+Incorporating the heuristic of error prevention, our prototype features several design elements that prevent errors before they occur. For instance, we restricted input options like date formatting to prevent users from entering invalid or inconsistent data. This ensures that the system receives accurate information, reducing the chances of errors or discrepancies. Furthermore, in the weekly plan section, the prototype does not allow users to move forward unless they have entered all the required information. This feature prevents users from creating incomplete plans.
+<p></p>
+It is worth noting that while our prototype met the criteria for the heuristic of error prevention, its effectiveness in preventing all types of errors is only medium. While the design elements prevent users from entering invalid or inconsistent data, they do not prevent users from entering impractical recipes, lists, or plans. The prototype only alerts users if certain input fields are left empty, but it does not provide guidance on the practicality or feasibility of the content entered. Therefore, users may still encounter errors or difficulties if they input impractical or unrealistic plans. 
+
+<h3>
+  Recognition over Recall
+</h3>
+
+The redesign includes several features that support recognition over recall, such as the autofill weekly planner, which presents users with suggestions for their meal plan based on their past recipe usage. Additionally, the categorization of recipes by time of day and cuisine provides users with a familiar and easily recognizable structure for organizing their recipes. Finally, the ability to compare recipes by nutritional information, with highlighting of the better meal option, allows users to make quick and informed decisions about what to cook without having to remember specific details about each recipe. This is important because users can quickly become overwhelmed with too many options and information to remember, and a design that supports recognition over recall can reduce cognitive load and improve user satisfaction.
+
+<h3>
+  Flexibility & Efficiency
+</h3>
+
+The redesign includes several features that promote flexibility and efficiency, such as keyboard shortcuts and touch gestures that allow users to quickly navigate the app and perform common actions. The ability to mark recipes as favorites allows users to quickly access their most frequently used recipes, while the smart meal recommender helps users find new recipes based on their dietary preferences and cooking habits. Finally, the Sous Chef Mode, which uses voice assistance to guide users through recipe preparation, allows users to cook hands-free and efficiently. These features contribute to a flexible and efficient design, which is important for users who value their time and want to achieve their cooking-related tasks with ease.
+
+<h3>
+  Aesthetic
+</h3>
+
+The redesign is consistent with the previous design in terms of color scheme and layout, but the new user flows and state management help to reduce clutter on individual pages. By organizing the app into clear and concise user flows, users are able to easily navigate between different pages without feeling overwhelmed by too much information on a single page. Additionally, the consistent navigation bar and overall design aesthetic help to create a cohesive and visually pleasing user experience.
 
     <p></p>
 
-    <p>
-      The same trend continues across these heuristics. The magic wand auto planner allows users to exercise recognition over recall, keyboard shortcuts provide strong flexibility and efficiency and the overall consistency with the original design of the application provides a sleek minimalist aesthetic. We have improved on heuristics such as error prevention as users are no longer able to leave empty trays while adding recipes. 
-    </p>
-
-    <img src="heuristic_eval3.png" alt="Evaluation #3" style="width:500px;height:250px;" class="center">
+  
+<p></p>
+    <img src="heuristic_eval3.png" alt="Evaluation #3">
 
     <p></p>
-    <p>
-      Although our prototype ranked low on "Recognize, Diagnose, and Recover from Errors", we have since improved by displaying an error message to the user if an image fails to upload. Furthermore, users are able to get help and access documentation through the navigation bar which offers assistance related to general, recipe, and shopping list issues. 
-    </p>
+   
 
 
+    <h3>Recognize and Recover From Errors:
+    </h3>
+    Our app makes it easy for users to easily identify and rectify issues they encounter. In addition to providing confirmation messages for successful actions, the app offers descriptive error messages to guide users in resolving problems. The implementation of key constraints and recovery options prevents unwanted entries and facilitates error correction. For instance, when users attempt to add recipes to their weekly plans, the app prevents them from leaving empty entries. This feature ensures that users include all necessary information, reducing the likelihood of mistakes. Similarly, the app displays error messages when issues arise, such as when images fail to upload. These messages not only alert users to the problem but also provide guidance on how to resolve the issue. By offering clear, actionable information, users can effectively recover from errors and continue using the app with minimal disruption.
+
+    <h3>
+      Help and Documentation
+
+    </h3>
+
+    Incorporating the heuristic of help and documentation, our prototype features several elements that help users understand and navigate the system. Since there are many features in our tool, having instructions on how to use it is essential. To provide this guidance, the prototype includes a help button on the navbar that is easily accessible from any page. This button leads users to a comprehensive guide that explains how to use each feature and provides tips on how to optimize their experience. The guide is designed to be user-friendly and visually engaging, with clear step-by-step instructions and screenshots. Additionally, the guide is organized into sections that correspond to different features, making it easy for users to find the information they need. 
 
 
 
